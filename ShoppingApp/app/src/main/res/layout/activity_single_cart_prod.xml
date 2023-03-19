@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleCartProd">
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/header1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Cart"
+            android:textColor="#4169E1"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            android:layout_gravity="center|left"
+            android:padding="10dp"
+
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="70dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header1"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/s1" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:text="rough notebook"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/header1"
+        app:layout_constraintStart_toEndOf="@id/img1"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="20dp"
+        android:text="apparel"
+        app:layout_constraintTop_toBottomOf="@id/t1"
+        app:layout_constraintStart_toEndOf="@id/img1"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="20dp"
+        android:text="105"
+        android:textColor="#4169E1"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/t2"
+        app:layout_constraintStart_toEndOf="@id/img1"
+        android:textSize="15sp"/>
+
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/img1"
+        app:layout_constraintStart_toEndOf="@id/img1"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:padding="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btnshape"
+        android:text="Delete"
+        android:textColor="#4169E1"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/spin"
+        app:layout_constraintBottom_toBottomOf="@id/img1"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
